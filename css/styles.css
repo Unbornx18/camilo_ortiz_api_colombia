@@ -58,3 +58,41 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
     border-bottom: 2px solid var(--amarillo);
 }
+
+/* Sección introductoria */
+.intro {
+    text-align: center;
+    margin: 2.5rem 0 2rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: var(--azul);
+    margin-bottom: 0.5rem;
+}
+
+.intro p {
+    color: var(--gris-claro);
+}
+
+/* Mensajes de carga y error */
+.estado-mensaje {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--azul);
+    background-color: var(--blanco);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.estado-mensaje.error {
+    color: var(--rojo);
+    border-left: 5px solid var(--rojo);
+}
+
+.oculto {
+    display: none;
+}
