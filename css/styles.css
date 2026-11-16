@@ -96,3 +96,71 @@ body {
 .oculto {
     display: none;
 }
+
+/* Cuadrícula de tarjetas */
+.grid-atracciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.tarjeta {
+    background: var(--blanco);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-color: #e2e8f0;
+}
+
+.tarjeta-cuerpo {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.tarjeta-ubicacion {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--rojo);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4rem;
+}
+
+.tarjeta-titulo {
+    font-size: 1.25rem;
+    color: var(--azul);
+    margin-bottom: 0.75rem;
+}
+
+.tarjeta-descripcion {
+    font-size: 0.95rem;
+    color: #475569;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #e2e8f0;
+    color: var(--gris-claro);
+    font-size: 0.9rem;
+}
