@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Turística de Colombia | Mini Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <h1>Portal Colombia</h1>
+            <!-- Navegación mediante hipervínculos sin eventos JS -->
+            <nav class="nav">
+                <a href="index.html">Inicio / Opción 1</a>
+                <a href="turismo.html" class="active">Guía Turística</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Guía Turística de Colombia</h2>
+            <p>Descubre los primeros 20 atractivos turísticos más destacados del país.</p>
+        </section>
+
+        <!-- Mensaje de carga y errores -->
+        <div id="estado-carga" class="estado-mensaje">
+            Cargando atractivos turísticos de Colombia...
+        </div>
+
+        <!-- Contenedor dinámico para las tarjetas -->
+        <section id="contenedor-atracciones" class="grid-atracciones"></section>
+    </main>
+
+    <footer class="footer">
+        <p>Datos obtenidos de <a href="https://api-colombia.com/" target="_blank" rel="noopener">API Colombia</a></p>
+    </footer>
+
+    <script src="js/turismo.js"></script>
+</body>
+</html>
