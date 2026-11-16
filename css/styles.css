@@ -26,3 +26,35 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* Header y Navegación */
+.header {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 1rem 0;
+    border-bottom: 4px solid var(--amarillo);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.nav a:hover,
+.nav a.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-bottom: 2px solid var(--amarillo);
+}
